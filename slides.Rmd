@@ -33,7 +33,7 @@ The following text will support the Web Scraping / Twitter stream gathering work
 
 - [Web Scraping](https://docs.google.com/presentation/d/1QVUR3B4QDgM5fLBtFditwKyGwij0hM1qDCUL56vs34k/edit#slide=id.p)
 
-    - [https://docs.google.com/presentation/.../](https://docs.google.com/presentation/d/1QVUR3B4QDgM5fLBtFditwKyGwij0hM1qDCUL56vs34k/edit#slide=id.p)
+    - [docs.google.com/presentation/.../](https://docs.google.com/presentation/d/1QVUR3B4QDgM5fLBtFditwKyGwij0hM1qDCUL56vs34k/edit#slide=id.p)
 
 - The [OpenRefine Workbook](https://libjohn.github.io/openrefine/)
 
