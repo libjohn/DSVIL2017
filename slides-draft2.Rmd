@@ -57,6 +57,103 @@ Moving across or through a website in an attempt to gather data from more than o
 
 ]
 
+---
+## Demonstration
+
+Congressional Press Releases
+
+- Representative Nancy Pelosi’s Press Releases
+    - CONTENT
+        - Structure of the [Press Release subsection](http://pelosi.house.gov/news/press-releases/) of the site
+            - Pagination
+            - Links to each release
+            - Common elements of release
+    - TOOL
+        - [Webscraper.io](http://Webscraper.io) tool works inside of Chrome
+            - Tutorials
+            - Documentation
+            - Community
+            - Free 
+                - Alternatively, Fee for Service
+
+---
+background-image: url(images/selector_graph.png)
+
+
+---
+class: orange
+
+## Now You Try It
+
+1. Download & Install [Webscraper.io](http://Webscraper.io) ; restart your Chrome browser
+
+2. Use one of the following sites
+
+    - http://pelosi.house.gov/news/press-releases/ 
+    - http://butterfield.house.gov/media-center/press-releases 
+    - https://walker.house.gov/media-center/press-releases 
+    - http://www.donnelly.senate.gov/newsroom/press 
+    - https://price.house.gov/press-releases/ (difficult pagination)
+
+3. Follow [Intructions](https://docs.google.com/document/d/17iKQG9JfREEEThz_Qeai5lvv5mYPRsixi0MKbS6aIsM/edit#heading=h.hdqpl186tuyo) 1-8
+
+    - Substitute the site you picked from step b (above)
+    
+    - (instructions: http://v.gd/webscraping1111 ) 
+    
+---
+class: softblue
+
+.pull-left[
+
+## Scrape
+
+![scraping propolis](images/Scraping_propolis.jpg) 
+
+Using tools to gather data you can see on a webpage
+
+]
+
+.pull-right[
+
+## Parse
+
+Analyzing the strings and symbols to reveal only the data you need
+
+
+![strain honey from comb](images/strain_comb.jpg)
+
+]
+
+
+---
+## OpenRefine (Fetch & Parse)
+
+- Scrape
+
+    - Add column by fetching URL...
+    
+- Parse 
+
+    - BeautifulSoup Libraries
+         - Refine uses the Jython Libraries and has Jsoup
+         - jSoup is a Java library built on BeautifulSoup -- a tool for HTML Extraction
+    - Resources
+        - [Step-by-step example](https://libjohn.github.io/openrefine/start.html#api)
+    - Documentation
+        - [OpenRefine’s documentation](https://github.com/OpenRefine/OpenRefine/wiki/StrippingHTML) on HTML Parsing
+        - [jSoup Documentation](http://jsoup.org/cookbook/extracting-data/selector-syntax)
+
+
+
+---
+class: orange
+
+## Now You Try It
+
+- [Step-by-Step](https://docs.google.com/document/d/173DBCKrfXWT2yGlFeGQ-zaCh5TefwxctL1CoTTQTS1Y/)
+
+- URL: http://v.gd/parsing2222 
 
 ---
 ## Resources 
@@ -83,7 +180,7 @@ The following text will support the Web Scraping / Twitter stream gathering work
 ## Image Credits
 
 - [Sloth](https://www.flickr.com/photos/ndanger/4425407800/in/photolist-aHctY-7K4nyu-5GWYyx-bwwbvt-bwwe7r-bwwbNr-S8zN-bwwekD-S8AM-dXgyC-bwwdkM-nJsop-B6SZ-bwwcaF-bwweB6-bwwcw6-bwwdtv-bwwaUx-bwwcUD-bwwcMn-bwwbdt-bwwdci-4wQdR-5jWS4P-xR5Wd-aZ1zL2-2kbBbL-s2hYyV-qYyRTS-9SDuok-62grYS-9Y8DY3-bvMPWn-bvV6wK-7Sxoah-Lwv5Z-8Znq63-6zatgS-cTR7h-oqwqZ-ziEuE-38Fp1D-7yAuKp-oQejEx-iJyMWk-dbJrj-a7K52r-f4rdX-4TJtNh-8F73H6) by [Dave Gingrich](https://www.flickr.com/photos/ndanger/)
-- 
+- [Scraping Propolis](https://commons.wikimedia.org/wiki/File:Scraping_propolis.jpg) by [fishermansdaughter](https://www.flickr.com/photos/fishermansdaughter/)
 
 
 
@@ -127,4 +224,4 @@ class: center, middle
 
 Data, presentation, and handouts are shareable under [CC BY-NC license](https://creativecommons.org/licenses/by-nc/4.0/)
 
-![This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.](https://licensebuttons.net/l/by-nc/4.0/88x31.png "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License")
+![This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.](images/cc-by-nc.png "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License")
