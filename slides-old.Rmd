@@ -1,0 +1,96 @@
+---
+title: "Web Data"
+subtitle: "DSVIL 2017"
+author: "John Little"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css:
+    - default
+    - duke.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: center, middle
+background-image:  url(https://www.lib.ncsu.edu/sites/default/files/styles/large/public/DSVIL%20Vertical%20Logo_0.jpg?itok=Ox09jpwk)
+
+---
+## Today...
+
+### Web Scraping
+
+9:00 am - 11:00 am  Web Scraping: Gathering Data from Websites, Parsing HTML & JSON, Orchestrating APIs, and Gathering Twitter Streams (John Little, Duke University)
+
+Preexisting and clean data sets such as the General Social Survey (GSS) or Census data are readily available, cover long periods of time, and have well documented codebooks. Meanwhile, researchers increasingly want to gather their own data from websites which provides a different layer of complexity; accessing content from these sources requires different tools and new techniques.  In this workshop we will use an open-source data wrangling tool (OpenRefine) to gather and clean data from webpages, and "crawl" whole websites, discuss and use Application Programming Interfaces (API), and give examples of how APIs are used with social media sources such as Twitter.
+
+---
+## Resources 
+
+The following text will support the Web Scraping / Twitter stream gathering workshop
+
+- [Web Scraping](https://docs.google.com/presentation/d/1QVUR3B4QDgM5fLBtFditwKyGwij0hM1qDCUL56vs34k/edit#slide=id.p)
+
+    - [docs.google.com/presentation/.../](https://docs.google.com/presentation/d/1QVUR3B4QDgM5fLBtFditwKyGwij0hM1qDCUL56vs34k/edit#slide=id.p)
+
+- The [OpenRefine Workbook](https://libjohn.github.io/openrefine/)
+
+    - https://libjohn.github.io/openrefine/
+
+- [Twitter Stream Gathering](https://libjohn.github.io/twitter-gather/slides.html)
+
+    - https://libjohn.github.io/twitter-gather/slides.html
+
+- [Regular Expressions](https://libjohn.github.io/regex/slides/)
+
+    - https://libjohn.github.io/regex/slides/
+
+---
+background-image: url(http://4.bp.blogspot.com/-XXCVJfR7jeU/Uh022FJuDVI/AAAAAAAADQA/3x5Fep2oJhM/s320/Data_Science_VD.png)
+
+
+[Data Science Core Skills](http://www.datasciencecentral.com/profiles/blogs/data-scientist-core-skills) Mitchel Sanders (2013)
+
+---
+## Thank You For Attending
+
+.pull-left[
+### I am ...
+
+- **John Little**
+- http://libjohn.github.io
+- http://github.com/libjohn
+
+
+#### Schedule Me
+
+- [http:&#47;&#47;v.gd&#47;littleconsult](http://duke.libcal.com/appointment/2695)
+
+]
+
+.pull-right[
+### Duke Univesrity...
+- **Data & Visualization Services**
+- http://library.duke.edu/data
+- The /Edge, Bostock (1st Floor)
+
+#### Walk-in Hours
+- [Schedule](http://library.duke.edu/data/about/schedule)
+
+#### Our Workshops
+- [Current Workshops](http://library.duke.edu/data/news)
+- [Past Workshops](http://library.duke.edu/data/news/past-workshops)
+
+#### Contact Us
+- askData@Duke.edu
+]
+
+---
+class: center, middle
+## Shareable under CC BY-NC license 
+
+Data, presentation, and handouts are shareable under [CC BY-NC license](https://creativecommons.org/licenses/by-nc/4.0/)
+
+![This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.](https://licensebuttons.net/l/by-nc/4.0/88x31.png "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License")
