@@ -322,9 +322,6 @@ class: softblue
 
 - Demonstration
     - using an API to http://omdb.org (OMDB is like IMDB.com)
-    - http://libjohn.github.io/rcs2017
-- Hands-on
-    - using An API Of Ice And Fire -- http://anapioficeandfire.com/
 
 ---
 class: green
