@@ -81,7 +81,7 @@ background-image: url(images/selector_graph.png)
 
 
 ---
-class: orange
+class: green
 
 ## Now You Try It
 
@@ -179,7 +179,7 @@ Hypertext Markup Language
         - [jSoup Documentation](http://jsoup.org/cookbook/extracting-data/selector-syntax)
 
 ---
-class: orange
+class: green
 
 ## Now You Try It
 
@@ -327,7 +327,7 @@ class: softblue
     - using An API Of Ice And Fire -- http://anapioficeandfire.com/
 
 ---
-class: orange
+class: green
 
 ## Now You Try
 
@@ -363,7 +363,7 @@ background-image: url(images/gsheets-results1.png)
 background-image: url(images/network-graph.png)
 
 ---
-class: orange
+class: green
 
 ## Now You Try...
 
