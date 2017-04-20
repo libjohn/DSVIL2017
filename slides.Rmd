@@ -44,6 +44,14 @@ background-image: url(http://4.bp.blogspot.com/-XXCVJfR7jeU/Uh022FJuDVI/AAAAAAAA
 [Data Science Core Skills](http://www.datasciencecentral.com/profiles/blogs/data-scientist-core-skills) Mitchel Sanders (2013)
 
 ---
+class: inverse, middle, center
+
+# Crawl
+
+WebScraper.io in Chrome Browser
+
+
+---
 class: softblue
 ## Crawl
 
@@ -101,6 +109,13 @@ class: green
     
     - (instructions: http://v.gd/webscraping1111 ) 
     
+---
+class: inverse, middle, center
+
+# Scrape & Parse
+
+OpenRefine using "Fetch URL" & "parseHTML"
+
 ---
 class: softblue
 
@@ -177,6 +192,7 @@ Hypertext Markup Language
     - Documentation
         - [OpenRefine’s documentation](https://github.com/OpenRefine/OpenRefine/wiki/StrippingHTML) on HTML Parsing
         - [jSoup Documentation](http://jsoup.org/cookbook/extracting-data/selector-syntax)
+        - [CSS](http://flukeout.github.io/)
 
 ---
 class: green
@@ -187,10 +203,18 @@ class: green
 
      - URL: http://v.gd/parsing2222 
 
-- Stop after step 5. Unless you're speedy and then give step 6 (regex) a try
+- Stop after step 5 
 
-    - More information on [Regular Expressions](https://libjohn.github.io/regex/slides/)
+    - If you're speedy, give step 6 (Parsing) a try
+    - [HTML Viewer](http://codebeautify.org/htmlviewer/)
     
+---
+class: inverse, middle, center
+
+# API
+
+using OpenRefine & ParseJSON
+
 ---
 class: softblue
 ## API
@@ -320,8 +344,15 @@ class: softblue
 
 ## Demonstration
 
-- Demonstration
-    - using an API to http://omdb.org (OMDB is like IMDB.com)
+- Demonstration in OpenRefine
+
+    - http://www.omdbapi.com/?t=rocky&y=&plot=full&r=json
+    - [JSON Viewr](http://jsonviewer.stack.hu/)
+    - parseJson().imdbID
+        - Actors
+        - Writer
+        - Title
+        
 
 ---
 class: green
@@ -329,6 +360,13 @@ class: green
 ## Now You Try
 
 1. [v.gd/parsing3333](https://docs.google.com/document/d/1ZiHC1v595tf2NAhv4vVdRYy-Ro78Bc37Y0gs1TfGBco/)
+
+---
+class: inverse, middle, center
+
+# Social Media
+
+Gather Twitter streams using the TAGS app for Google Sheets
 
 ---
 class: softblue
@@ -376,8 +414,73 @@ class: green
     
 3. Results are found in the "Archive" sheet
 
+---
+## Analysis
 
---
+TAGS offers 
+
+- Summary Sheet 
+
+- Dashboard Sheet 
+
+- TAGS Explorer 
+    - Network graphs
+    - Top Tweets
+    - Top Hashtags
+    - Top Conversations
+    - Sheet must be publicly available 
+    
+- TAGS Archive 
+    - Search filters of the archive
+
+---
+class: green
+
+## Now You Try...
+
+Using your Twitter stream archive and TAGS, visualize the network of a twitter user
+
+1. TAGS &gt; Add Summary Sheet
+
+2. TAGS &gt; Add Dashboard Sheet
+
+3. Make your Google Sheet Public
+
+    - Share button &gt; Done
+    - &lt;img src="images/Google-Share-button.png" style="vertical-align: top;"&gt;
+    
+4. On the *Readme/Settings* Sheet &gt; TAGSExplorer
+
+---
+## Historical Twitter Data
+
+- Last 7 Days from the Twitter API
+
+- [gnip.com](http://gnip.com) for historical data
+
+- **Plan Ahead**
+
+---
+## Other Analysis Tools
+
+### Simple 
+
+- Netylics - https://netlytic.org/
+
+- SocioViz - http://socioviz.net/ 
+
+### Visual Text Analysis
+
+- Voyant - http://voyant-tools.org/
+
+- Overview - https://www.overviewdocs.com/
+
+### Network Graph Analysis    
+
+- Gephi - https://gephi.org/
+
+
+---
 ## More on Twitter
 
 - Easy Tools:  [Twitter & APIs](https://libjohn.github.io/twitter-gather/) | [video](http://library.capture.duke.edu/Panopto/Pages/Viewer.aspx?id=82e1fe62-a003-4160-871e-765e027fc1b0)
