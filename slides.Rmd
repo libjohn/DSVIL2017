@@ -15,7 +15,7 @@ output:
       countIncrementalSlides: false
 ---
 class: center, middle
-background-image:  url(https://www.lib.ncsu.edu/sites/default/files/styles/large/public/DSVIL%20Vertical%20Logo_0.jpg?itok=Ox09jpwk)
+background-image:  url(https://www.lib.ncsu.edu/sites/default/files/styles/large/public/DSVIL%20Vertical%20Logo_0.jpg)
 
 ---
 ## Today...
