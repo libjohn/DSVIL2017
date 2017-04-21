@@ -385,7 +385,7 @@ class: softblue
 
 ## TAGS:  a tool for collecting Twitter streams
 
-- TAGS (“New Sheets”; Version 6.1ns)
+- TAGS (“New Sheets”; Version 6.1)
 
     - Form driven (not command line)
     - Minimal setup
