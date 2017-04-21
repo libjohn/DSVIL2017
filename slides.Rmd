@@ -35,7 +35,7 @@ Preexisting and clean data sets such as the General Social Survey (GSS) or Censu
 
 3. **Discuss** and use an **API** (Application Programming Interfaces) *15 minutes*
 
-4. **Examples** of social media API -- TAGS *25 minutes*
+4. **Examples** of **social media** Analysis & APIs -- TAGS *25 minutes*
 
 ---
 background-image: url(http://4.bp.blogspot.com/-XXCVJfR7jeU/Uh022FJuDVI/AAAAAAAADQA/3x5Fep2oJhM/s320/Data_Science_VD.png)
@@ -193,6 +193,18 @@ Hypertext Markup Language
         - [OpenRefine’s documentation](https://github.com/OpenRefine/OpenRefine/wiki/StrippingHTML) on HTML Parsing
         - [jSoup Documentation](http://jsoup.org/cookbook/extracting-data/selector-syntax)
         - [CSS](http://flukeout.github.io/)
+
+---
+## Demonstrate
+
+From price-press_releases.csv
+
+- `value.parseHtml().select("div.contentdata")[0].select("strong")`
+
+- `value.parseHtml().select("div.contentdata")[0].select("strong")[2].htmlText()`
+
+- `forEach(value.parseHtml().select("div.contentdata")[0].select("strong"),e,e.htmlText()).join("|")`
+
 
 ---
 class: green
@@ -478,6 +490,44 @@ Using your Twitter stream archive and TAGS, visualize the network of a twitter u
 ### Network Graph Analysis    
 
 - Gephi - https://gephi.org/
+
+---
+background-image: url(images/keys6a.jpg)
+
+## API Keys
+
+.left-column[
+- You can 
+    - Regenerate keys
+    - Change access permissions
+    - Delete the keys/application
+    - Keep your *Secret Key* a secret!
+]
+
+.right-column.pull-right[
+- A way for the Service Host to know how their API is being used
+
+- Register your Application at the Twitter API Dashboard 
+]
+
+&lt;!-- Image credit:  http://www.publicdomainpictures.net/view-image.php?image=167489  --&gt;
+
+---
+## Where are my Keys?
+
+1. http://apps.twitter.com
+
+    - Name = TAGS Twitter Data (must be unique across Twittersphere)
+    - Description = My TAGS application collects my Twitter Searches
+    - Web Site = A page that connects to you, or better to your application (e.g. A results report)
+    - Callback URL = https://script.google.com/macros/
+    - Read the developer rules and accept the terms
+
+2. Get your keys
+
+    - Click on the *Keys and Access Tokens* Tab
+        - Consumer Key (API Key)
+        - Consumer Secret (API Secret)
 
 
 ---
