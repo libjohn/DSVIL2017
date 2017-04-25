@@ -195,16 +195,37 @@ Hypertext Markup Language
         - [CSS](http://flukeout.github.io/)
 
 ---
-## Demonstrate
+## Demonstratation -- Process Outline
 
-From price-press_releases.csv
+1. Fecth HTML by URL from Web Server
 
-- `value.parseHtml().select("div.contentdata")[0].select("strong")`
+    - Edit column > Add column by fetching URL...
 
-- `value.parseHtml().select("div.contentdata")[0].select("strong")[2].htmlText()`
+2. Parse HTML
 
-- `forEach(value.parseHtml().select("div.contentdata")[0].select("strong"),e,e.htmlText()).join("|")`
+    - Edit column > Add column based on this column
+        - `parseHTML()`
+        - 'select("css handle")'
+            - highlight > right-click > inspect (Google Chrome Web Developer Mode)
+            - Choose array element, typically `[0]`
+            - convert element:
+                - `htmlText()`
+                - `htmlAttr()`
+                
+---
+###  Parsing by HTML elements and CSS
 
+1. Edit Column > Add column based on this column
+
+    - `value.parseHtml().select("div#centerbox")[0].htmlText()`
+    - `value.parseHtml().select("title")[0].htmlText()`
+
+###  Parsing by Brute Force
+
+2. Edit Column > Add column based on this column
+
+    - `value.split("</title>")[0]`
+    - Edit Cells > Transform > `value.split("<title>")[1]`
 
 ---
 class: green
@@ -219,7 +240,22 @@ class: green
 
     - If you're speedy, give step 6 (Parsing) a try
     - [HTML Viewer](http://codebeautify.org/htmlviewer/)
+
+---        
+## Demonstrate -- Part 2
+
+From price-press_releases.csv
+
+- `value.parseHtml().select("div.contentdata")[0].select("strong")`
+
+- `value.parseHtml().select("div.contentdata")[0].select("strong")[2].htmlText()`
+
+- `value.parseHtml().select("div#centerbox")[0].select("a")[3].htmlAttr("href")`
+
+- `forEach(value.parseHtml().select("div#centerbox")[0].select("a"),j,j.htmlAttr("href")).join("|||")`
     
+
+
 ---
 class: inverse, middle, center
 
