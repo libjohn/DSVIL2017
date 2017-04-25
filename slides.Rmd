@@ -75,7 +75,7 @@ Congressional Press Releases
         - Structure of the [Press Release subsection](http://pelosi.house.gov/news/press-releases/) of the site
             - Pagination
             - Links to each release
-            - Common elements of release
+            - Information Content Structure:  Web Site & Web Page(s)
     - TOOL
         - [Webscraper.io](http://Webscraper.io) tool works inside of Chrome
             - Tutorials
@@ -185,8 +185,8 @@ Hypertext Markup Language
 - Parse 
 
     - BeautifulSoup Libraries
-         - Refine uses the Jython Libraries and has Jsoup
-         - jSoup is a Java library built on BeautifulSoup -- a tool for HTML Extraction
+         - Refine uses GREL Expressions to transform data
+         - jSoup is a Java library implementation of BeautifulSoup -- a tool for HTML Extraction
     - Resources
         - [Step-by-step example](https://libjohn.github.io/openrefine/start.html#api)
     - Documentation
@@ -195,9 +195,9 @@ Hypertext Markup Language
         - [CSS](http://flukeout.github.io/)
 
 ---
-## Demonstratation -- Process Outline
+## Demonstration -- Process Outline
 
-1. Fecth HTML by URL from Web Server
+1. Fetch HTML by URL from Web Server
 
     - Edit column > Add column by fetching URL...
 
@@ -205,19 +205,19 @@ Hypertext Markup Language
 
     - Edit column > Add column based on this column
         - `parseHTML()`
-        - 'select("css handle")'
-            - highlight > right-click > inspect (Google Chrome Web Developer Mode)
-            - Choose array element, typically `[0]`
+        - `select("HTML/CSS handle")`
+            - in Chrome:  highlight text > right-click > inspect (Chrome Developer Mode)
+            - choose an array element, typically `[0]`
             - convert element:
                 - `htmlText()`
-                - `htmlAttr()`
+                - `htmlAttr("attribute handle")`
                 
 ---
 ###  Parsing by HTML elements and CSS
 
 1. Edit Column > Add column based on this column
 
-    - `value.parseHtml().select("div#centerbox")[0].htmlText()`
+    - `value.parseHtml().select("div.contentdata")[0].htmlText()`
     - `value.parseHtml().select("title")[0].htmlText()`
 
 ###  Parsing by Brute Force
@@ -232,16 +232,15 @@ class: green
 
 ## Now You Try It
 
-- [Step-by-Step](https://docs.google.com/document/d/173DBCKrfXWT2yGlFeGQ-zaCh5TefwxctL1CoTTQTS1Y/):  1-5
+1. [Step-by-Step Worksheet](https://docs.google.com/document/d/173DBCKrfXWT2yGlFeGQ-zaCh5TefwxctL1CoTTQTS1Y/):  Complete the *fetching* and *brute force* parsing method in steps 1-4
 
-     - URL: http://v.gd/parsing2222 
+2. Complete the parsing example in Step 5
 
-- Stop after step 5 
+3. If you're speedy try the various parsing examples in step 6 
 
-    - If you're speedy, give step 6 (Parsing) a try
-    - [HTML Viewer](http://codebeautify.org/htmlviewer/)
+    - HTML Viewer: http://codebeautify.org/htmlviewer/
 
----        
+---
 ## Demonstrate -- Part 2
 
 From price-press_releases.csv
@@ -281,21 +280,17 @@ A set of rules and protocols used to build a software application.  In the conte
 ---
 ## Why Use APIs?
 
-### The Web has lots of stuff
+--
 
-- frontier beyond curated datasets
+- Get data in BULK
 
-- stuff is wrapped in HTML
-
-- HTML is transported over HTTP but composed for h2m consumption
-
-???
-
-To get BULK Data!
+    - frontier beyond curated datasets
+    - better data structures and eliminates HTML (JSON is easier to parse)
+    - Easier to generate tidy dataframes
 
 --
 
-## Intellectual Property rights bear serious consideration
+## Intellectual Property must be considered
 
 ---
 class: softblue
@@ -308,7 +303,7 @@ class: softblue
 
 ---
 
-### h2m Simulation...
+### Simulation...
 
 - Person enters a URL
 
@@ -378,7 +373,7 @@ class: softblue
 
 ## m2m -- development
 
-- Make [R] interface with the web
+- Make [OR] interface with the web API
 
 - Same as h2m but now m2m
 
@@ -395,8 +390,8 @@ class: softblue
 - Demonstration in OpenRefine
 
     - http://www.omdbapi.com/?t=rocky&y=&plot=full&r=json
-    - [JSON Viewr](http://jsonviewer.stack.hu/)
-    - parseJson().imdbID
+    - [JSON Viewer](http://jsonviewer.stack.hu/)
+    - `parseJson().imdbID`
         - Actors
         - Writer
         - Title
@@ -495,7 +490,7 @@ Using your Twitter stream archive and TAGS, visualize the network of a twitter u
 3. Make your Google Sheet Public
 
     - Share button &gt; Done
-    - &lt;img src="images/Google-Share-button.png" style="vertical-align: top;"&gt;
+    - <img src="images/Google-Share-button.png" style="vertical-align: top;">
     
 4. On the *Readme/Settings* Sheet &gt; TAGSExplorer
 
