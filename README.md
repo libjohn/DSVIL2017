@@ -1,6 +1,9 @@
 # DSVIL2017
 Supporting materials for a DSVIL presentation on April 26, 2017
 
+## Slides
+You can find (read, share, etc.) [my presentation slides](http://www.johnlittle.info/project/custom/dsvil2017/slides.html)
+
 ## Time
 9:00 am - 11:00 am  Web Scraping: Gathering Data from Websites, Parsing HTML & JSON, Orchestrating APIs, and Gathering Twitter Streams (John Little, Duke University)
 
